@@ -1,0 +1,154 @@
+{
+	"id": "45759acd-4bb4-4f3b-ab95-cbe70c6d9134",
+	"name": "Pruebas Servicio Barbería Pro",
+	"timestamp": "2025-11-07T05:39:00.002Z",
+	"collection_id": "43226230-81923938-40cd-4896-8318-2dccaa5b9277",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-11-07T05:38:59.291Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "3810c7dc-f7e4-4b4e-a167-cad22a0f52c5",
+			"name": "Actualizar Servicios",
+			"url": "http://localhost:5000/servicios/12",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "21178504-843b-4f69-a020-e7599eeca0a9",
+			"name": "Registrar Servicio",
+			"url": "http://localhost:5000/servicios",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "138aad32-88c4-4916-9944-28fca0e29752",
+			"name": "Listar Servicio",
+			"url": "http://localhost:5000/servicios",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ea529391-1d14-4c24-a4c0-da3a8b07e52f",
+			"name": "Eliminar Servicio",
+			"url": "http://localhost:5000/servicios/12",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0ab61eaf-fdf0-4ae2-b407-915c45d45bb2",
+			"name": "Listar Servicios por Categoría",
+			"url": "http://localhost:5000/servicios/categoria/1",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c4af23fb-17f7-4653-a8d2-7d32711753f8",
+			"name": "Listar Categorías",
+			"url": "http://localhost:5000/categorias",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 33,
+	"collection": {
+		"requests": [
+			{
+				"id": "3810c7dc-f7e4-4b4e-a167-cad22a0f52c5",
+				"method": "PUT"
+			},
+			{
+				"id": "21178504-843b-4f69-a020-e7599eeca0a9",
+				"method": "POST"
+			},
+			{
+				"id": "138aad32-88c4-4916-9944-28fca0e29752",
+				"method": "GET"
+			},
+			{
+				"id": "ea529391-1d14-4c24-a4c0-da3a8b07e52f",
+				"method": "DELETE"
+			},
+			{
+				"id": "0ab61eaf-fdf0-4ae2-b407-915c45d45bb2",
+				"method": "GET"
+			},
+			{
+				"id": "c4af23fb-17f7-4653-a8d2-7d32711753f8",
+				"method": "GET"
+			}
+		]
+	}
+}

@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "81923938-40cd-4896-8318-2dccaa5b9277",
+		"name": "Pruebas Servicio Barbería Pro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48590504",
+		"_collection_link": "https://apideidad.postman.co/workspace/apideidad-Workspace~d90a75b1-b856-41db-ab23-f8226e53e489/collection/43226230-81923938-40cd-4896-8318-2dccaa5b9277?action=share&source=collection_link&creator=48590504"
+	},
+	"item": [
+		{
+			"name": "Actualizar Servicios",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "datos",
+							"value": "{\n        \"nombre\": \"Corte Premium\",\n        \"descripcion\": \"Corte con diseño + Barba\",\n        \"precio\": 25000,\n        \"categoria\": {\n            \"idCategoria\": 1\n        },\n        \"duracion\": 20,\n        \"estado\": \"disponible\"\n        }\n",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "imagen",
+							"contentType": "image/jpeg",
+							"type": "file",
+							"src": "/C:/Users/jcben/Downloads/barbillita.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/servicios/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"servicios",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar Servicio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "datos",
+							"value": "{\n  \"nombre\": \"Lavado Premium\",\n  \"descripcion\": \"Lavado + cuidado de barba\",\n  \"precio\": 15000,\n  \"estado\": \"ACTIVO\",\n  \"duracion\": 20,\n  \"categoria\": {\n            \"idCategoria\": 1\n        }\n}",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "imagen",
+							"contentType": "image/jpeg",
+							"type": "file",
+							"src": "/C:/Users/bryan/Desktop/Imágenes LAB SW3/a5403a76-b95e-4ea0-8ed0-981e15a65943.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/servicios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"servicios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Servicio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/servicios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"servicios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Servicio",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/servicios/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"servicios",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Servicios por Categoría",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/servicios/categoria/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"servicios",
+						"categoria",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Categorías",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "datos",
+							"value": "{\n  \"nombre\": \"Lavado Premium\",\n  \"descripcion\": \"Lavado + cuidado de barba\",\n  \"precio\": 15000,\n  \"estado\": \"ACTIVO\",\n  \"duracion\": 20,\n  \"categoria\": {\n            \"idCategoria\": 1\n        }\n}",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "imagen",
+							"contentType": "image/jpeg",
+							"type": "file",
+							"src": "/C:/Users/jcben/Downloads/barbillita.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/categorias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
